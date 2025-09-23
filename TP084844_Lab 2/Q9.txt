@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class UniversityTuition {
+    public static void main(String[] args) {
+        double tuition = 10000;   // initial tuition
+        double rate = 0.05;       // 5% increase
+
+        System.out.println("Year 0: RM" + tuition);
+
+        for (int year = 1; year <= 10; year++) {
+            tuition = tuition * (1 + rate);  // increase by 5%
+            System.out.println("Year " + year + ": RM" + String.format("%.2f", tuition));
+        }
+    }
+}

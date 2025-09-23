@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class InvestmentCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+    
+        System.out.print("Enter investment amount: ");
+        double investmentAmount = input.nextDouble();
+
+        System.out.print("Enter annual interest rate (in %): ");
+        double annualRate = input.nextDouble();
+
+        System.out.print("Enter number of years: ");
+        int years = input.nextInt();
+
+       
+        double monthlyRate = annualRate / 1200; 
+
+     
+        double futureInvestmentVal = investmentAmount * 
+                Math.pow(1 + monthlyRate, years * 12);
+
+    
+        System.out.printf("Future investment value is: %.2f%n", futureInvestmentVal);
+
+        input.close();
+    }
+}

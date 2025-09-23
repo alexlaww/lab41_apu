@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+
+public class DigitSum {
+  
+public static void main(String[] args) {
+    // Create a scanner object to read input
+    Scanner scanner = new Scanner(System.in);
+    
+    //Prompt the user to enter an integer between 0 and 1000
+    System.out.print("Enter an integer between 0 and 1000: ");
+    int number = scanner.nextInt();
+    
+    //Check if the number is within the valid range
+    if (number < 0 || number > 1000) {
+        System.out.println("Please enter a number between 0 and 1000");
+    } else {
+        // Initials sum to 0
+        int sum = 0;
+        
+        // Loop through the digits of the number
+        while (number > 0) {
+            sum += number % 10; 
+            number = number / 10;
+            
+        // Display the result
+        System.out.println("The sum of the digits is:" + sum);
+                
+        }
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
+    
+}

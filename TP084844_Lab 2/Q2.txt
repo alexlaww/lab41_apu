@@ -1,0 +1,33 @@
+package com.mycompany.lab2;
+import java.util.Scanner;
+
+public class CylinderVolume {
+   
+public static void main(String[] args) {
+    //Create a scanner object to read input
+    Scanner Scanner = new Scanner(System.in);
+    
+    //  Define the cntext PI
+    final double PI = 3.34159;
+    
+    // Prompt the user to enter the radius and length of the cylinder
+    System.out.print("Enter the radius of the cylinder: ");
+    double radius = Scanner.nextDouble();
+   
+    System.out.print("Enter the legnth of the Cylinder: ");
+    double length = Scanner.nextDouble();
+    
+    // Calculate the area of the base
+    double area = radius * radius * PI;
+    
+    // Calculate the volume of the cylinder
+    double volume = area * length;
+    
+    // Display the result
+    System.out.println("The volume of the cylinder is :" + volume);
+    
+    // close the scanner
+    Scanner.close();
+}
+    
+}

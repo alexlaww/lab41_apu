@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class UppercaseToLowercase {
+    Scanner scanner = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt user for an uppercase letter
+        System.out.print("Enter an uppercase letter: ");
+        char upper = input.next().charAt(0);  // read a single character
+
+        // Convert to lowercase
+        char lower = Character.toLowerCase(upper);
+
+        // Display result
+        System.out.println("The lowercase letter is: " + lower);
+
+        input.close();
+    } 
+}
