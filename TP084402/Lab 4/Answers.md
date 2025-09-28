@@ -33,4 +33,4 @@ The use-case model defines the functions/use cases of a system, as well as how t
   
 # Question 4
 
-[{25AF3094-ACF9-4772-97D6-F3209084B0FE}.png]
+![img]({25AF3094-ACF9-4772-97D6-F3209084B0FE}.png)
